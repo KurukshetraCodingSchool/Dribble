@@ -79,3 +79,68 @@ nav #nav_part3 button:nth-child(2){
     background-color: #16152A;
     color: white;
 }
+.hero{
+    width: 100%;
+    height: 120vh;
+    background-color: #16152A;
+}
+.hero_part1{
+    width: 100%;
+    height: 60%;
+    background-color: #F8F7F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    flex-direction: column;
+}
+.hero_part1 h3{
+    background-color: #E9B3ED;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 30px;
+}
+.hero_part1 h1{
+    font-size: 80px;
+    text-align: center;
+    font-family: sarif;
+    font-weight: 100;
+    width: 50%;
+    line-height: 80px;
+}
+.hero_part1 p{
+    font-size: 22px;
+}
+.hero_part1 button{
+    padding: 14px;  
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    background-color: #16152A;
+    color: white;
+
+}
+.hero_part2{
+    width: 100%;
+    height: 40%;
+}
+.hero_part2 .scroll{
+    width: 100%;
+  height: 100%;
+  
+}
+.scroll .elem{
+    height: 80%;
+    width: 16.4%;
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.scroll .elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
