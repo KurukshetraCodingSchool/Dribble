@@ -100,6 +100,8 @@ nav #nav_part3 button:nth-child(2){
     font-size: 16px;
     font-weight: 200;
     border-radius: 30px;
+    animation: backgroun 25s linear infinite ;
+    color: white;
 }
 .hero_part1 h1{
     font-size: 80px;
@@ -157,6 +159,23 @@ nav #nav_part3 button:nth-child(2){
     }
     100%{
         transform: translateX(-100%);
+    }
+}
+@keyframes backgroun {
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: green;
+    }
+    75%{
+        background-color: #16152A;
+    }
+    100%{
+        background-color: bisque;
     }
 }
 .scroll .elem .text{
