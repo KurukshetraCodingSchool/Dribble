@@ -82,7 +82,7 @@ nav #nav_part3 button:nth-child(2){
 .hero{
     width: 100%;
     height: 120vh;
-    background-color: #16152A;
+    /* background-color: #16152A; */
 }
 .hero_part1{
     width: 100%;
@@ -123,19 +123,24 @@ nav #nav_part3 button:nth-child(2){
 }
 .hero_part2{
     width: 100%;
-    height: 40%;
+    height: 40%;  
+    overflow-x: hidden;
+    white-space: nowrap;
 }
 .hero_part2 .scroll{
     width: 100%;
   height: 100%;
-  
+  display: inline-block;
+  animation: scroll 18s infinite linear;
 }
 .scroll .elem{
     height: 80%;
-    width: 16.4%;
+    width: 15.8%;
   display: inline-block;
   border-radius: 20px;
-  overflow: hidden;
+  margin-left: 10px;
+  position: relative;
+  
 }
 
 .scroll .elem img{
@@ -143,4 +148,39 @@ nav #nav_part3 button:nth-child(2){
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 40px;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.scroll .elem .text{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom:  0;
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    font-family: monospace;
+}
+
+.scroll .elem .text h5,p{
+    font-family: monospace;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.scroll .elem .text button{
+    padding: 5px;
+    border-radius: 20px;
+    border: .1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-top: 5px;
 }
