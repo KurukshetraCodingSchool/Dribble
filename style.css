@@ -203,3 +203,73 @@ nav #nav_part3 button:nth-child(2){
     color: white;
     margin-top: 5px;
 }
+
+.Explore{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #16152A; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+.Explore h1{
+    font-size: 65px;
+    font-weight: 100;
+
+}
+#image{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #E9B3ED; */
+    display: inline-block;
+}
+#image .el{
+    width: 22%;
+    height: 350px;
+    /* background-color: aqua; */
+    border-radius: 30px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 40px;
+}
+#image .el img{
+    width: 100%;
+    height: 80%;
+}
+.information{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.information #information_part1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.information #information_part1 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.information #information_part1 span{
+    color: gray;
+}
+.Explore button{
+    padding: 15px;
+    padding-left: 20px;
+    border-radius: 30px;
+    border: 1px solid black;
+    /* color:  white; */
+    /* background-color: #E9B3ED; */
+    font-size: 15px;
+}
