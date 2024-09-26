@@ -213,6 +213,7 @@ nav #nav_part3 button:nth-child(2){
     justify-content: center;
     flex-direction: column;
     gap: 100px;
+    padding-bottom: 100px;
 }
 .Explore h1{
     font-size: 65px;
@@ -233,11 +234,15 @@ nav #nav_part3 button:nth-child(2){
     overflow: hidden;
     display: inline-block;
     margin-left: 40px;
+    position: relative;
+    
 }
 #image .el img{
     width: 100%;
     height: 80%;
+    border-radius: 20px;
 }
+
 .information{
     width: 100%;
     height: 20%;
@@ -266,10 +271,133 @@ nav #nav_part3 button:nth-child(2){
 }
 .Explore button{
     padding: 15px;
-    padding-left: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius: 30px;
     border: 1px solid black;
     /* color:  white; */
     /* background-color: #E9B3ED; */
     font-size: 15px;
+}
+.nextDesign{
+    width: 100%;
+    height: 95vh;
+    background-color: #FFDA79;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    gap:  40px;
+    flex-direction: column;
+}
+.nextDesign h1{
+    font-size: 80px;
+    font-weight: 100;
+    font-family: serif;
+}
+.nextDesign p{
+    font-size: 22px;
+    width: 45%;
+    text-align: center;
+}
+.nextDesign a{
+    color: black;
+}
+.nextDesign button{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    border-radius: 30px;
+   border: none;
+}
+.nextDesign button:nth-child(1){
+    background-color: #16152A;
+    color: white;
+}
+footer{
+    width: 100%;
+    height: 70vh;
+    padding-top: 50px;
+}
+#footer_part1 {
+    width: 100%;
+    height: 50%;
+   white-space: nowrap;
+   overflow: hidden;
+   transition: 0.6s ease-out;
+
+}
+#footer_part1 .scroll{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    animation: scroll 18s infinite linear;
+
+    transition: 0.6s ease-out;
+
+}
+#footer_part1:hover .scroll{
+    animation: none;
+}
+
+#footer_part1 .scroll .el{
+    width: 16.5%;
+    height: 250px;
+   display: inline-block;
+   padding-left: 25px;
+   transition: 0.6s ease-out;
+
+}
+#footer_part1 .scroll .el img{
+    width: 100%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+    transition: 0.6s ease-out;
+
+}
+#foooter_part2{
+    width: 100%;
+    height: 50%;
+}
+#foooter_part2 #footer_top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#foooter_part2 #footer_top svg{
+    width: 150px;
+}
+#foooter_part2 #footer_top ul {
+    display: flex;
+    list-style: none;
+    gap:40px;
+    font-family: monospace;
+}
+#foooter_part2 #footer_top ul li{
+    font-family: monospace;
+    font-size: 20px;
+    letter-spacing: normal;
+}
+#foooter_part2 #footer_top #icon i{
+font-size: 25px;
+margin-left: 8px;
+}
+#foooter_part2 #footer_down {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#foooter_part2 #footer_down #footer_left,#footer_right{
+display: flex;
+gap: 40px;
+
+}
+#foooter_part2 #footer_down #footer_left a ,#footer_right a{
+text-decoration: none;
+color: rgba(0, 0, 0, 0.543);
 }
